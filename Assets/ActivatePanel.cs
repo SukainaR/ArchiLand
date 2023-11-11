@@ -5,11 +5,15 @@ using UnityEngine;
 public class ActivatePanel : MonoBehaviour
 {
         [SerializeField] private GameObject objectToActivate;
-
-        public void TransitionToNextPanel()
+        [SerializeField] private GameObject objectToDeactivate;
+        
+    public void TransitionToNextPanel()
         {
 
             objectToActivate.SetActive(true);
-        }
+            objectToDeactivate.SetActive(false);
+            
+           
+    }
 
  }
