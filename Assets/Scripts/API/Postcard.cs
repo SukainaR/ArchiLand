@@ -2,17 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Postcard : MonoBehaviour
+[SerializeField]
+public class Postcard
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int post_id { get; set; }
+    public string post_name { get; set; }
+    public string post_img { get; set; }
+    public string post_text { get; set; }
+}
+[SerializeField]
+public class PostcardList
+{
+    public List<Postcard> postcard;
 }
