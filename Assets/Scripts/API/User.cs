@@ -2,17 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class User : MonoBehaviour
+[SerializeField]
+public class User 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int user_id;
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[SerializeField]
+public class UserList
+{
+    public List<User> users;
 }
