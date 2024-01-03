@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Map : MonoBehaviour
+[SerializeField]
+public class Map 
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int map_id { get; set; }
+    public string map_name { get; set; }
+}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+[SerializeField]
+public class MapList
+{
+    public List<Map> map;
 }
