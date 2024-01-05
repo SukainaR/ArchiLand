@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
-    async void Update()
+    void Update()
     {
             // Check for player input to move the character
         float horizontalInput = Input.GetAxis("Horizontal");

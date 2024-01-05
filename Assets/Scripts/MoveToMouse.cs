@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class MoveToMouse : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class MoveToMouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Console.WriteLine("work");
+        
         if(Input.GetMouseButtonDown(1))
         {
             target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
