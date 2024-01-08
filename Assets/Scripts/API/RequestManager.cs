@@ -5,62 +5,33 @@ using UnityEngine;
 using static Unity.VisualScripting.Member;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
+using UnityEngine.UI;
+using System;
+using JetBrains.Annotations;
+using System.Reflection;
 
 public class RequestManager : MonoBehaviour
 
 {
-    private string _apiBaseURL = "https://localhost:7224/api/"; // change this to match your API URL
+    private string _apiBaseURL = "https://localhost:7100/api/ArchilandsControllers/GetLandmarkById/"; // change this to match your API URL
 
-    public List<TMP_Text> courseTextButtons;
+    public List<TMP_Text> landmarkTextButtons;
+    /*public List<RawImage> landmarkImageButtons;
+    public string imgNo;*/
 
     public void Start()
     {
 
     }
 
-    public void GetAllCourses()
+    public void GetLandmarkById(string id)
     {
-        StartCoroutine(GetCourses());
+        StartCoroutine(GetLandmarkId(id));
     }
 
-    IEnumerator GetCourses()
+    IEnumerator GetLandmarkId(string id)
     {
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(_apiBaseURL + "University/GetCourses"))
-        {
-            yield return webRequest.SendWebRequest();
-
-            switch (webRequest.result)
-            {
-                case UnityWebRequest.Result.DataProcessingError:
-                    Debug.LogError(": Error: " + webRequest.error);
-                    break;
-                case UnityWebRequest.Result.ProtocolError:
-                    Debug.LogError(": HTTP Error: " + webRequest.error);
-                    break;
-                //case UnityWebRequest.Result.Success:
-                   // Debug.Log(":\nReceived info from GetCouses: " + webRequest.downloadHandler.text);
-
-                   // CourseList _courses = JsonConvert.DeserializeObject<CourseList>("{\"courses\":" + webRequest.downloadHandler.text + "}");
-                    //Debug.Log(_courses.courses.Count);
-
-                    //foreach (Course c in _courses.courses)
-                    {
-                       // Debug.Log("Couse ID -> " + c.cour_id + " | Course Name -> " + c.cour_name);
-                    }
-                    //break;
-            }
-        }
-    }
-
-    public void GetCourseById(string id)
-    {
-        StartCoroutine(GetCourseId(id));
-    }
-
-    IEnumerator GetCourseId(string id)
-    {
-        Debug.Log("Working");
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(_apiBaseURL + "University/GetCourseById/" + id))
+        using (UnityWebRequest webRequest = UnityWebRequest.Get(_apiBaseURL + id))
         {
             yield return webRequest.SendWebRequest();
 
@@ -73,15 +44,26 @@ public class RequestManager : MonoBehaviour
                     Debug.LogError(": HTTP Error: " + webRequest.error);
                     break;
                 case UnityWebRequest.Result.Success:
-                    Debug.Log(":\nReceived info from GetCouses: " + webRequest.downloadHandler.text);
-                    //Course _course = JsonConvert.DeserializeObject<Course>(webRequest.downloadHandler.text);
+                    Debug.Log(":\nReceived info from GetLandmarks: " + webRequest.downloadHandler.text);
+                    Landmark _landmark = JsonConvert.DeserializeObject<Landmark>(webRequest.downloadHandler.text);
 
-                   // this.courseTextButtons[0].text = "" + _course.cour_id;
-                    //this.courseTextButtons[1].text = _course.cour_name;
+                   this.landmarkTextButtons[0].text = _landmark.land_head_1;
+                   this.landmarkTextButtons[1].text = _landmark.land_text_1;
+                   this.landmarkTextButtons[2].text = _landmark.land_head_2;
+                   this.landmarkTextButtons[3].text = _landmark.land_text_2;
+                   this.landmarkTextButtons[4].text = _landmark.land_head_3;
+                   this.landmarkTextButtons[5].text = _landmark.land_text_3;
+                   this.landmarkTextButtons[6].text = _landmark.land_head_4;
+                   this.landmarkTextButtons[7].text = _landmark.land_text_4;
+                    
+              
+
                     break;
             }
         }
     }
+    
+
 }
 
 
