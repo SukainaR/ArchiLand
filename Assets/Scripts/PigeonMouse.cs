@@ -50,12 +50,19 @@ public class PigeonMouse : MonoBehaviour
 
     void MoveWithMouseClick()
     {
-        Debug.Log("hi");
+       
         if (Input.GetMouseButtonDown(0))
         {
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
             targetPosition.z = transform.position.z;
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, Time.deltaTime * 5);
+            Debug.Log("Origin " + transform.position);
+            Debug.Log("Target " + targetPosition);
+
+
+
+            targetPosition.x += 100;
+            transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1);
         }
         
     }
