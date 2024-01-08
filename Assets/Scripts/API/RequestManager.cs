@@ -55,6 +55,7 @@ public class RequestManager : MonoBehaviour
                    this.landmarkTextButtons[5].text = _landmark.land_text_3;
                    this.landmarkTextButtons[6].text = _landmark.land_head_4;
                    this.landmarkTextButtons[7].text = _landmark.land_text_4;
+                   this.landmarkTextButtons[8].text = _landmark.land_name;
                     
               
 
