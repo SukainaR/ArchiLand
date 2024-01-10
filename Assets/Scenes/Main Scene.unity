@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6075,6 +6075,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 866485850}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &486286453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10191,7 +10203,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &748477718
 MonoBehaviour:
@@ -11654,7 +11666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &866485852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19524,7 +19536,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 866485850}
+      - m_Target: {fileID: 1993697354}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -24212,6 +24224,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 866485850}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1872416592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26336,7 +26360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1993697355
 Transform:
   m_ObjectHideFlags: 0
@@ -28502,8 +28526,8 @@ MonoBehaviour:
   - {fileID: 4812293638738317395}
   - {fileID: 7067501176159753774}
   m_Bounds:
-    m_Center: {x: 0.0000019073486, y: 0.0131008625, z: -2.5999985}
-    m_Extent: {x: 6.0699997, y: 3.1468997, z: 0.00000023841858}
+    m_Center: {x: -0.000005722046, y: 0.0131008625, z: -2.5999985}
+    m_Extent: {x: 6.069999, y: 3.1468997, z: 0.00000023841858}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -28617,8 +28641,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7853611078563015347}
   m_Bounds:
-    m_Center: {x: 0.0004899502, y: 0, z: 0}
-    m_Extent: {x: 3.4495108, y: 2.1000004, z: 0}
+    m_Center: {x: 0.0004823208, y: 0, z: 0}
+    m_Extent: {x: 3.4495106, y: 2.1000001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -28758,8 +28782,8 @@ MonoBehaviour:
   - {fileID: 9103327158244832494}
   - {fileID: 6901249520599684806}
   m_Bounds:
-    m_Center: {x: -0.0004963875, y: -0.003421843, z: 0}
-    m_Extent: {x: 2.0425239, y: 0.96658194, z: 0}
+    m_Center: {x: -0.0004963875, y: -0.0034219027, z: 0}
+    m_Extent: {x: 2.0425236, y: 0.9665818, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -28866,8 +28890,8 @@ MonoBehaviour:
   - {fileID: 1798217620456992087}
   - {fileID: 7853611078563015347}
   m_Bounds:
-    m_Center: {x: 0.034143448, y: -0.014861584, z: 0}
-    m_Extent: {x: 8.512547, y: 7.015142, z: 0}
+    m_Center: {x: 0.034143448, y: -0.014862061, z: 0}
+    m_Extent: {x: 8.512547, y: 7.0151415, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -29358,7 +29382,7 @@ MonoBehaviour:
   - {fileID: 5932707170523212895}
   m_Bounds:
     m_Center: {x: 0.0024696589, y: 0.00024989247, z: 0}
-    m_Extent: {x: 1.8875303, y: 0.49842995, z: 0}
+    m_Extent: {x: 1.8875301, y: 0.4984299, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
