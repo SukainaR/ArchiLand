@@ -48,9 +48,9 @@ public class PigeonMouse : MonoBehaviour
         transform.right = direction.normalized;
     }
 
-    void MoveWithMouseClick()
-    {
-       
+     void MoveWithMouseClick()
+     {
+
         if (Input.GetMouseButtonDown(0))
         {
             targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -59,13 +59,15 @@ public class PigeonMouse : MonoBehaviour
             Debug.Log("Origin " + transform.position);
             Debug.Log("Target " + targetPosition);
 
-
-
-            targetPosition.x += 100;
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, 1);
         }
-        
-    }
+
+             //targetPosition.x += 100;
+             transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementSpeed*Time.deltaTime);
+         
+
+     }
+    
+    
 
     void Animation()
     {
