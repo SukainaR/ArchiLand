@@ -8,6 +8,7 @@ public class ActivatePanelAfterVideo : MonoBehaviour
 {
     public VideoPlayer videoPlayer; // Drag & Drop the GameObject holding the VideoPlayer component
     public GameObject Panel;
+    public GameObject PanelDeactivate;
 
     void Start()
     {
@@ -17,6 +18,6 @@ public class ActivatePanelAfterVideo : MonoBehaviour
     public void LoadPanel(VideoPlayer vp)
     {
         Panel.gameObject.SetActive(true);
-
+        PanelDeactivate.gameObject.SetActive(false);
     }
 }
