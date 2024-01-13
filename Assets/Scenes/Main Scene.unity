@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.3069224, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2217,7 +2217,7 @@ GameObject:
   - component: {fileID: 180094237}
   - component: {fileID: 180094236}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2307,7 +2307,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9310,9 +9310,8 @@ GameObject:
   - component: {fileID: 668587153}
   - component: {fileID: 668587152}
   - component: {fileID: 668587151}
-  - component: {fileID: 668587154}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9381,7 +9380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 668587152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2093598516}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &668587152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9402,7 +9413,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9420,21 +9431,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 668587149}
   m_CullTransparentMesh: 1
---- !u!114 &668587154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 668587149}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0.3160377, g: 1, b: 0.7715676, a: 0.5}
-  m_EffectDistance: {x: 3, y: 3}
-  m_UseGraphicAlpha: 1
 --- !u!1 &679894376
 GameObject:
   m_ObjectHideFlags: 0
@@ -9524,7 +9520,7 @@ GameObject:
   - component: {fileID: 686253005}
   - component: {fileID: 686253004}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9614,7 +9610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12519,7 +12515,7 @@ GameObject:
   - component: {fileID: 849751670}
   - component: {fileID: 849751669}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12609,7 +12605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16246,7 +16242,7 @@ GameObject:
   - component: {fileID: 1095018303}
   - component: {fileID: 1095018302}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16336,7 +16332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21334,7 +21330,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -27288,7 +27284,7 @@ GameObject:
   - component: {fileID: 1794105843}
   - component: {fileID: 1794105842}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27378,7 +27374,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -31483,7 +31479,7 @@ GameObject:
   - component: {fileID: 2050107368}
   - component: {fileID: 2050107367}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31573,7 +31569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33249,7 +33245,7 @@ GameObject:
   - component: {fileID: 2138985510}
   - component: {fileID: 2138985509}
   m_Layer: 5
-  m_Name: Get Prize Button
+  m_Name: Reward Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33339,7 +33335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4998be92bf3c47a4a86456c44a762f34, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fec7819caa0021548a7cf3aca96270be, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33423,8 +33419,8 @@ MonoBehaviour:
   - {fileID: 4812293638738317395}
   - {fileID: 7067501176159753774}
   m_Bounds:
-    m_Center: {x: -0.000005722046, y: 0.0131008625, z: -2.5999985}
-    m_Extent: {x: 6.069999, y: 3.1468997, z: 0.00000023841858}
+    m_Center: {x: 0.0000019073486, y: 0.0131008625, z: -2.5999985}
+    m_Extent: {x: 6.0699997, y: 3.1468997, z: 0.00000023841858}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -33538,8 +33534,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 7853611078563015347}
   m_Bounds:
-    m_Center: {x: 0.0004823208, y: 0, z: 0}
-    m_Extent: {x: 3.4495106, y: 2.1000001, z: 0}
+    m_Center: {x: 0.0004899502, y: 0, z: 0}
+    m_Extent: {x: 3.4495108, y: 2.1000004, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -33679,8 +33675,8 @@ MonoBehaviour:
   - {fileID: 9103327158244832494}
   - {fileID: 6901249520599684806}
   m_Bounds:
-    m_Center: {x: -0.0004963875, y: -0.0034219027, z: 0}
-    m_Extent: {x: 2.0425236, y: 0.9665818, z: 0}
+    m_Center: {x: -0.0004963875, y: -0.003421843, z: 0}
+    m_Extent: {x: 2.0425239, y: 0.96658194, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -33787,8 +33783,8 @@ MonoBehaviour:
   - {fileID: 1798217620456992087}
   - {fileID: 7853611078563015347}
   m_Bounds:
-    m_Center: {x: 0.034143448, y: -0.014862061, z: 0}
-    m_Extent: {x: 8.512547, y: 7.0151415, z: 0}
+    m_Center: {x: 0.034143448, y: -0.014861584, z: 0}
+    m_Extent: {x: 8.512547, y: 7.015142, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -34230,7 +34226,7 @@ MonoBehaviour:
   - {fileID: 5932707170523212895}
   m_Bounds:
     m_Center: {x: 0.0024696589, y: 0.00024989247, z: 0}
-    m_Extent: {x: 1.8875301, y: 0.4984299, z: 0}
+    m_Extent: {x: 1.8875303, y: 0.49842995, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
